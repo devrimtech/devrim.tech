@@ -1,0 +1,50 @@
+#image {
+    position: relative;
+    left: 560px;
+    top: 210px;
+}
+
+#searchBar {
+    position: relative;
+    left: 420px;
+    top: 220px;
+    border-radius: 50%;
+}
+
+input  {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 7px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border-radius: 25px;
+    width: 500px;
+    height: 30px;
+    border: 2px solid #ccc
+}
+
+#input {
+    color:red;
+}
+
+
+/*
+#input {
+    border-radius: 25px;
+    width:450px;
+    height: 35px;
+    border: 10px;
+    border-color: black;
+}
+input {
+    border-color: black;
+    border: 10px;
+}
+
+#input:focus {
+    color: red;
+}
+
+input:hover{
+    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
+} */
