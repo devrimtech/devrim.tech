@@ -83,7 +83,7 @@ nav {
     font-size: 3rem;
     position: absolute;
     justify-content: center;
-    top: 400px;
+    top: 370px;
 }
 
 .intro {
@@ -92,7 +92,7 @@ nav {
     justify-content: center;
     text-align: center;
     position: absolute;
-    top: 1000px;
+    top: 800px;
     left: 50%;
     width: 50%;
     margin: -15% 0 0 -25%;
