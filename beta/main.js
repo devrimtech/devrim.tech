@@ -1,9 +1,9 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-const fancytext = document.querySelector(".fancy-text");
-const strText = fancytext.textContent;
-const splitText = strText.split("");
+let hamburger = document.querySelector(".hamburger");
+let navLinks = document.querySelector(".nav-links");
+let links = document.querySelectorAll(".nav-links li");
+let fancytext = document.querySelector(".fancyText");
+let strText = fancytext.textContent;
+let splitText = strText.split("");
 const typeText = [
     "design websites",
     "program games",
@@ -41,9 +41,6 @@ for (let i = 0; i < splitText.length; i++) {
     if (letter.length === currentText.length) {
         count++;
         index = 0;
-        console.log(
-            `currentText.length: ${currentText.length} letter.length: ${letter.length} count: ${count} index: ${index} letter: ${letter}`
-        );
     }
     setTimeout(type, 250);
 })();

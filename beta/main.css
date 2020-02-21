@@ -18,7 +18,7 @@ body {
     background-color: var(--color3) !important;
 }
 
-.fancy-text {
+.fancyText {
     background: -webkit-linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ body {
     transform: translateY(50px);
 }
 
-.fancy-text:hover {
+.fancyText:hover {
     background: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
