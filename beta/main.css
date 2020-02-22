@@ -101,10 +101,12 @@ body {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .fancy-text {
+@media screen and (max-width: 500px) {
+    .fancyText {
         margin-left: auto;
         margin-right: auto;
+        top: 100%;
+        margin-bottom: -10%;
         width: 6.5em;
     }
     .intro {
