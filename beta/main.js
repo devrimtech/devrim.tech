@@ -42,7 +42,7 @@ for (let i = 0; i < splitText.length; i++) {
         index = 0;
         console.log(`currentText.length: ${currentText.length} letter.length: ${letter.length} count: ${count} index: ${index} letter: ${letter}`);
     }
-setTimeout(type, 250);
+setTimeout(type, 200);
 
 }())
 

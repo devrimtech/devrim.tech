@@ -181,4 +181,14 @@ nav {
     li.fade {
         opacity: 1;
     }
+    .fancy-text-div {
+        text-justify: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    .fancy-text {
+        text-align: center;
+        padding-top: 85%;   /* The same as your div height */
+    }
 }
