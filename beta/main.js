@@ -1,7 +1,7 @@
 let hamburger = document.querySelector(".hamburger");
 let navLinks = document.querySelector(".nav-links");
 let links = document.querySelectorAll(".nav-links li");
-let fancytext = document.querySelector(".fancyText");
+let fancytext = document.querySelector(".fancy-text");
 let strText = fancytext.textContent;
 let splitText = strText.split("");
 const typeText = [

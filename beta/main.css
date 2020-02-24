@@ -18,7 +18,7 @@ body {
     background-color: var(--color3) !important;
 }
 
-.fancyText {
+.fancy-text {
     background: -webkit-linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ body {
     transform: translateY(50px);
 }
 
-.fancyText:hover {
+.fancy-text:hover {
     background: linear-gradient(315deg, #9e8fb2 0%, #a7acd9 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -80,6 +80,8 @@ body {
 .typing {
     position: relative;
     right: -10px;
+    word-wrap: break-word;
+    white-space: nowrap;
 }
 
 .typing::after {
@@ -101,8 +103,86 @@ body {
     }
 }
 
+.indent {
+    padding-left: 1%;
+}
+
+.point {
+    padding-left: 0%;
+}
+
+#about {
+    padding-left: 20%;
+    padding-bottom: 10%;
+    font-size: 20px;
+    padding-right: 10%;
+}
+
+*:link {
+    color: white;
+}
+
+*:visited {
+    color: white;
+}
+
+.projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: var(--color2);
+    color: var(--text-color);
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--color4);
+    color: var(--text-color);
+    transform: rotateY(180deg);
+  } 
+
+
 @media screen and (max-width: 500px) {
-    .fancyText {
+    .fancy-text {
         margin-left: auto;
         margin-right: auto;
         top: 100%;
@@ -129,70 +209,11 @@ body {
 
     .fancy-text {
         text-align: center;
-        padding-top: 85%;   /* The same as your div height */
+        padding-top: 30vh;   /* The same as your div height */
     }
-}
 
-
-.indent {
-    padding-left: 1%;
-}
-
-.point {
-    padding-left: 0%;
-}
-
-#about {
-    padding-left: 20%;
-    padding-bottom: 10%;
-    font-size: 20px;
-}
-
-*:link {
-    color: white;
-}
-
-*:visited {
-    color: white;
-}
-
-.projects {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-container {
-    width: 200px;
-    height: 300px;
-    background: var(--color1);
-}
-
-.card {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s ease-in-out;
-    transform-style: preserve-3d;
-}
-
-.card-container:hover .card {
-    transform: rotateY(180deg);
-}
-
-.card figure {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0;
-}
-
-.card .front {
-    background: var(--color1);
-}
-
-.card .back {
-    background: var(--color2);
-    transform: rotateY(180deg);
+    #about_section {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }

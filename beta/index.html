@@ -22,13 +22,14 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="https://devrim.tech/beta/about.html" id="currentPage">Home</a></li>
-            <li><a href="https://devrim.tech/beta/about.html">About</a></li>
-            <li><a href="https://devrim.tech/beta/projects.html">Projects</a></li>
+            <li><a href="#home" id="currentPage">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="https://devrim.tech/beta/contact.html">Contact</a></li>
         </ul>
     </nav>
 
+    <section id="home">
     <div id="main">
         <div id="front_Title">
             <div id="front_container">
@@ -42,9 +43,10 @@
             <h1 class="typing">make apps</h1>
         </div>
     </div>
+    </section>
 
-    <section id="about_section">
-        <div id="about">
+    <section id="about">
+        <div id="about_section">
 
             <p class="point">● I am a Programmer</p>
             <p class="indent">--JavaScript</p>
@@ -76,22 +78,23 @@
         </div>
     </section>
 
-    <section>
+    <section id="projects">
         <div class="projects">
-            <div class="card-container">
-                <div class="card">
-                    <figure class="front">
-                        <h1>PigLatin</h1>
-                    </figure>
-                    <figure class="back">
-                        <p>An English to Piglatin converter made in Python and C#.</p>
-                    </figure>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <h1>ScribeBot</h1>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>JavScript</h1>
+                    <p>Discord bot that adds many unique features to my server</p>
+                    <p>GitHub</p>
+                  </div>
                 </div>
-            </div>
+              </div> 
         </div>
     </section>
     <script src="main.js"></script>
 
 </body>
-
 </html>
