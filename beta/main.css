@@ -144,3 +144,44 @@ body {
 *:visited {
     color: white;
 }
+
+.projects {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 200px;
+    height: 300px;
+    background: var(--color1);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+.card .front {
+    background: var(--color1);
+}
+
+.card .back {
+    background: var(--color2);
+    transform: rotateY(180deg);
+}
