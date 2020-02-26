@@ -180,7 +180,13 @@ body {
     transform: rotateY(180deg);
   } 
 
-
+  .Project_ScribeBot .flip-card-front {
+      background-image: url(https://www.adkgamers.com/uploads/monthly_2018_01/discordemoji.png.d4595464f83db5678588ae9a56e2509a.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 70%;
+      background-size: 50%;
+  }
 @media screen and (max-width: 500px) {
     .fancy-text {
         margin-left: auto;
