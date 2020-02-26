@@ -187,6 +187,10 @@ body {
       background-position-y: 70%;
       background-size: 50%;
   }
+
+  .card-language {
+    font-weight: bold;
+  }
 @media screen and (max-width: 500px) {
     .fancy-text {
         margin-left: auto;
