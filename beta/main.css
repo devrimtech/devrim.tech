@@ -189,7 +189,19 @@ body {
   }
 
   .card-language {
-    font-weight: bold;
+    /* To fill empty space */
+  }
+
+  .flip-card-title {
+      /* To fill empty space */
+  }
+
+  .flip-card-text {
+      /* To fill empty space */
+  }
+
+  .flip-card-button {
+      /* To fill empty space */
   }
 @media screen and (max-width: 500px) {
     .fancy-text {
