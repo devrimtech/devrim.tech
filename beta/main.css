@@ -185,7 +185,15 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-position-y: 70%;
-      background-size: 50%;
+      background-size: 40%;
+  }
+
+  .Project_PigLatin .flip-card-front {
+      background-image: url("/beta/images/PigLatin.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 70%;
+      background-size: 80%;
   }
 
   .card-language {
@@ -201,15 +209,28 @@ body {
   }
 
   .flip-card-button {
-      /* To fill empty space */
+      top: 60%;
+      position: absolute;
+      right: 43%;
+      background-color: var(--color4);
+      border: none;
+      font-size: 3em;
+      cursor: pointer;
   }
 @media screen and (max-width: 500px) {
+    .front_Iam {
+        top: 50%;
+    }
+    .front_hello {
+        top: 36%;
+    }
     .fancy-text {
         margin-left: auto;
         margin-right: auto;
         top: 100%;
         margin-bottom: -10%;
         width: 6.5em;
+        font-size: 300%;
     }
     .intro {
         display: flex;
