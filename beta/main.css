@@ -196,6 +196,14 @@ body {
       background-size: 80%;
   }
 
+  .Project_StockPye .flip-card-front {
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F38%2F38802.png&f=1&nofb=1");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 70%;
+      background-size: 50%;
+  }
+
   .card-language {
     /* To fill empty space */
   }
@@ -216,6 +224,16 @@ body {
       border: none;
       font-size: 3em;
       cursor: pointer;
+      appearance: button;
+      -webkit-appearance: button;
+    -moz-appearance: button;
+  }
+
+  #Special-Button {
+      right: 60%;
+  }
+  #Special-Button2 {
+      right: 30%;
   }
 @media screen and (max-width: 500px) {
     .front_Iam {
