@@ -98,6 +98,7 @@ body {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -135,138 +136,252 @@ body {
     flex-wrap: wrap;
 }
 
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
- .flip-card {
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: var(--color2);
     color: var(--text-color);
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: var(--color4);
     color: var(--text-color);
     transform: rotateY(180deg);
-  } 
+}
 
-  .Project_ScribeBot .flip-card-front {
-      background-image: url(https://www.adkgamers.com/uploads/monthly_2018_01/discordemoji.png.d4595464f83db5678588ae9a56e2509a.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 40%;
-  }
+.Project_ScribeBot .flip-card-front {
+    background-image: url(https://www.adkgamers.com/uploads/monthly_2018_01/discordemoji.png.d4595464f83db5678588ae9a56e2509a.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 40%;
+}
 
-  .Project_PigLatin .flip-card-front {
-      background-image: url("/beta/images/PigLatin.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 80%;
-  }
+.Project_PigLatin .flip-card-front {
+    background-image: url("/beta/images/PigLatin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 80%;
+}
 
-  .Project_StockPye .flip-card-front {
-      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F38%2F38802.png&f=1&nofb=1");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 50%;
-  }
+.Project_StockPye .flip-card-front {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F38%2F38802.png&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 50%;
+}
 
-  .Project_Startpage .flip-card-front {
-      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe6%2FHome_Icon.svg%2F768px-Home_Icon.svg.png&f=1&nofb=1");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 50%;
-  }
+.Project_Startpage .flip-card-front {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe6%2FHome_Icon.svg%2F768px-Home_Icon.svg.png&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 50%;
+}
 
-  .Project_Blog .flip-card-front {
-      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fsvg%2F20170110%2Fblog_1221727.png&f=1&nofb=1");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 50%;
-  }
+.Project_Blog .flip-card-front {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpng.pngtree.com%2Fsvg%2F20170110%2Fblog_1221727.png&f=1&nofb=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 50%;
+}
 
-  .Project_Lost .flip-card-front {
-      background-image: url("https://raw.githubusercontent.com/KaiSakurai/Lost-OmniHacks2019/master/Assets/Assests/Untitled_Artwork-1.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-position-y: 70%;
-      background-size: 100%;
-  }
+.Project_Lost .flip-card-front {
+    background-image: url("https://raw.githubusercontent.com/KaiSakurai/Lost-OmniHacks2019/master/Assets/Assests/Untitled_Artwork-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 70%;
+    background-size: 100%;
+}
 
-  .card-language {
+.card-language {
     /* To fill empty space */
-  }
+}
 
-  .flip-card-title {
-      /* To fill empty space */
-  }
+.flip-card-title {
+    /* To fill empty space */
+}
 
-  .flip-card-text {
-      /* To fill empty space */
-  }
+.flip-card-text {
+    /* To fill empty space */
+}
 
-  .flip-card-button {
-      top: 60%;
-      position: absolute;
-      right: 43%;
-      background-color: var(--color4);
-      border: none;
-      font-size: 3em;
-      cursor: pointer;
-      appearance: button;
-      -webkit-appearance: button;
+.flip-card-button {
+    top: 60%;
+    position: absolute;
+    right: 43%;
+    background-color: var(--color4);
+    border: none;
+    font-size: 3em;
+    cursor: pointer;
+    appearance: button;
+    -webkit-appearance: button;
     -moz-appearance: button;
-  }
+}
 
-  #Special-Button {
-      right: 60%;
-  }
-  #Special-Button2 {
-      right: 30%;
-  }
+#Special-Button {
+    right: 60%;
+}
+
+#Special-Button2 {
+    right: 30%;
+}
+
+/* form animation starts */
+.form {
+    background: var(--color4);
+    text-align: center;
+    border-radius: 10px;
+    width: 45%;
+    height: 400px;
+    margin: 30px auto 0 auto;
+    padding: 10px 10px;
+    animation: bounce 1.5s infinite;
+}
+
+.name {
+    background-color: gray;
+    border-bottom: 5px solid white;
+    color: white;
+    width: 300px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.name:hover {
+    background-color: var(--color1);
+    border-bottom: 5px solid gray;
+    height: 30px;
+    width: 400px;
+}
+
+.email {
+    background-color: gray;
+    border-bottom: 5px solid white;
+    height: 50px;
+    width: 300px;
+
+}
+
+.email:hover {
+    background-color: var(--color1);
+    border-bottom: 5px solid gray;
+    height: 30px;
+    width: 380px;
+
+}
+
+.message {
+    background-color: gray;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    height: 100px;
+    width: 300px;
+}
+
+.message:hover {
+    background-color: var(--color1);
+    border-bottom: 5px solid gray;
+    height: 100px;
+    width: 370px;
+}
+
+.submit {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #2DD7BB;
+    border: none;
+    border-bottom: 5px solid #CB64B2;
+    transform: translateY(-120px);
+
+}
+
+.submit:hover {
+    border-bottom: 5px solid whitesmoke;
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+}
+
+.entry {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+}
+
+/* Shadow to make it look like form is floating  */
+.shadow {
+    opacity: 0.5;
+    border-radius: 100px;
+    width: 50%;
+    margin: 50px auto 0 auto;
+    padding: 0 20px;
+}
+
+.submit {
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    background-color: #434c5e;
+    border: none;
+    border-bottom: 5px solid #3b4252;
+    margin-top: 150px;
+
+}
+
 @media screen and (max-width: 500px) {
     .front_Iam {
         top: 50%;
     }
+
     .front_hello {
         top: 36%;
     }
+
     .fancy-text {
         margin-left: auto;
         margin-right: auto;
@@ -275,6 +390,7 @@ body {
         width: 6.5em;
         font-size: 300%;
     }
+
     .intro {
         display: flex;
         color: var(--text-color);
@@ -287,6 +403,7 @@ body {
         margin: -15% 0 0 -25%;
         font-size: 1.3rem;
     }
+
     .fancy-text-div {
         text-justify: auto;
         justify-content: center;
@@ -295,7 +412,8 @@ body {
 
     .fancy-text {
         text-align: center;
-        padding-top: 30vh;   /* The same as your div height */
+        padding-top: 30vh;
+        /* The same as your div height */
     }
 
     #about_section {
