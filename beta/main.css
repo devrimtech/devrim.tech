@@ -275,13 +275,11 @@ body {
     height: 400px;
     margin: 30px auto 0 auto;
     padding: 10px 10px;
-    animation: bounce 1.5s infinite;
 }
 
 .name {
     background-color: gray;
     border-bottom: 5px solid white;
-    color: white;
     width: 300px;
 }
 
@@ -331,9 +329,6 @@ body {
 .submit {
     border-radius: 5px;
     padding: 10px;
-    background-color: #2DD7BB;
-    border: none;
-    border-bottom: 5px solid #CB64B2;
     transform: translateY(-120px);
 
 }
@@ -352,15 +347,6 @@ body {
     transition: all 0.5s ease 0s;
 }
 
-/* Shadow to make it look like form is floating  */
-.shadow {
-    opacity: 0.5;
-    border-radius: 100px;
-    width: 50%;
-    margin: 50px auto 0 auto;
-    padding: 0 20px;
-}
-
 .submit {
     border-radius: 5px;
     padding: 10px;
@@ -373,6 +359,10 @@ body {
 
 }
 
+footer {
+    justify-content: center;
+    right:50%;
+}
 @media screen and (max-width: 500px) {
     .front_Iam {
         top: 50%;
