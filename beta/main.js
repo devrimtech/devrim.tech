@@ -52,6 +52,7 @@ function onTick() {
     char++;
 
     if (char == splitText.length) {
+        setTimeout(1000);
         complete();
         return;
     }
