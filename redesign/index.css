@@ -1,6 +1,9 @@
+@import url('https://css.gg/shape-triangle.css');
+
   :root {
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --primary-color: #d8dee9;
+    --bg-color: #3b4252;
+    --underline-color: #bdbdbd;
     --menu-speed: 0.75s;
   }
   
@@ -8,11 +11,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--primary-color) !important;
   }
-  
+  html {
+      font-family: 'Open Sans', Arial;
+  }
   body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4;
+    background-color: var(--bg-color) !important;
   }
 
 .wrapper{
@@ -79,31 +86,65 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 4%;
     overflow: hidden;
-    background-color: #333;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: 10px;
     visibility: hidden;
+    font-size: 30px;
   }
   
   .li-links {
-    float: left;
-    
+    float: right;
   }
   
   .li-links a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
   }
   
   .li-links a:hover {
-    background-color: #111;
+    text-decoration: underline;
+    text-decoration-color:var(--underline-color);
+    text-decoration-thickness: 24px;
   }
-  
-  .active {
-    background-color: #4CAF50;
+
+  .last-name {
+      font-size: 2rem;
+      position: relative;
   }
+
+  .last-name:after {
+    content: "";
+    display: inline-block;
+    background: url("icon-external.jpg") no-repeat top right;
+    width: 14px;
+    height: 12px;
+}
+
+.mccormick {
+    font-size: 2rem;
+    font-weight: 600;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mccormick::after {
+    content: '\f0da';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    color:red;
+    font-size: 3rem;
+    padding-left: 2%;
+    vertical-align: middle;
+    line-height: 1em;
+    bottom: 10%;
+}
+
+.title {
+    margin-bottom: 0 !important;
+}
