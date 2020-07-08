@@ -165,17 +165,43 @@ body {
   display: inline-block;
 }
 
-.mccormick::after {
-  content: '\f0da';
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  color: var(--primary-color);
-  font-size: 3rem;
-  position: absolute;
-  left: 180px;
-  top: 27px;
+.mccormickIcon {
+  position: relative;
+  bottom: 30px;
+  left: 170px;
+}
+.rotate-side {
+  -webkit-transform: rotate(90deg) !important;
+  -moz-transform: rotate(90deg) !important;
+  -ms-transform: rotate(90deg) !important;
+.rotate-down {
+  -webkit-transform: rotate(180deg) !important;
+  -moz-transform: rotate(180deg) !important;
+  -ms-transform: rotate(180deg) !important;
+  -o-transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
 }
 
+.icon-hidden {
+  visibility: hidden;
+}
+
+.social-icons {
+  font-size: 32px;
+  padding: 10px;
+}
+
+.github-logo:hover {
+  color: #A94DB4 !important;
+}
+
+.linkedin-logo:hover {
+  color: #0077B5 !important;
+}
+
+.twitter-logo:hover {
+  color: #29AAE1 !important;
+}
 .title {
   margin-bottom: 0 !important;
 }
