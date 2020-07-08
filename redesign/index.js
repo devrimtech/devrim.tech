@@ -1,6 +1,8 @@
 const icons = document.querySelectorAll('.icon');
 const liLinks = document.getElementsByClassName(".li-links");
 const ulLinks = document.getElementById("ul-links");
+const mccormickAfter = window.getComputedStyle(document.querySelector('.mccormick'), ':after');
+
 
 icons.forEach (icon => {  
   icon.addEventListener('click', (event) => {
@@ -13,3 +15,8 @@ icons.forEach (icon => {
     }
   });
 });
+
+function mccormickClick() {
+  mccormickAfter.transform = "matrix(-1, 0, 0, 1, 0, 0)";
+  console.log("rotate");
+}
