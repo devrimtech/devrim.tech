@@ -128,7 +128,7 @@ body {
     font-size: 30px;
     z-index: 100 !important;
   }
-  
+
 }
 
 .li-links {
@@ -184,6 +184,7 @@ body {
   bottom: 30px;
   left: 180px;
 }
+
 .rotate-side {
   -webkit-transform: rotate(90deg) !important;
   -moz-transform: rotate(90deg) !important;
@@ -191,6 +192,7 @@ body {
   -o-transform: rotate(90deg) !important;
   transform: rotate(90deg) !important;
 }
+
 .rotate-down {
   -webkit-transform: rotate(180deg) !important;
   -moz-transform: rotate(180deg) !important;
@@ -219,26 +221,27 @@ body {
 .twitter-logo:hover {
   color: #29AAE1 !important;
 }
+
 .title {
   margin-bottom: 0 !important;
   margin-right: 100px;
 }
 
-/* @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .devrim-logo {
     visibility: hidden;
   }
-} */
+}
 
 @media only screen and (min-width: 900px) {
   .devrim-logo {
     width: 50px;
     left: 10px;
-    
+
   }
 }
+
 .devrim-logo {
-  visibility: visible;
   position: fixed;
   top: 1%;
 }
@@ -255,12 +258,35 @@ body {
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
+@media only screen and (min-width: 900px) {
+  .IAMA {
+    padding-left: 260px;
+  }
+
+  #app {
+    padding-left: 300px;
+  }
+}
+
 .IAMA {
   font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  vertical-align: middle;
+}
+
+#app {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  vertical-align: middle;
 }
