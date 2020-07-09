@@ -182,7 +182,7 @@ body {
 .mccormickIcon {
   position: relative;
   bottom: 30px;
-  left: 170px;
+  left: 180px;
 }
 .rotate-side {
   -webkit-transform: rotate(90deg) !important;
@@ -224,19 +224,21 @@ body {
   margin-right: 100px;
 }
 
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
   .devrim-logo {
     visibility: hidden;
   }
-}
+} */
 
 @media only screen and (min-width: 900px) {
   .devrim-logo {
     width: 50px;
     left: 10px;
+    
   }
 }
 .devrim-logo {
+  visibility: visible;
   position: fixed;
   top: 1%;
 }
@@ -260,5 +262,5 @@ body {
 }
 
 .IAMA {
-  
+  font-size: 2rem;
 }
