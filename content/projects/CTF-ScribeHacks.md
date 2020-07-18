@@ -1,0 +1,14 @@
+---
+date: '2021'
+title: 'CTF-ScribeHacks'
+github: 'https://github.com/ScribeHacks/ctf.scribehacks.tech'
+external: 'https://ctf.scribehacks.tech'
+tech:
+  - Python
+  - Flask
+  - SQL
+  - HTML/CSS
+showInProjects: true
+---
+
+The CTF event for ScribeHacks and uses an SQL database to keep track of the users, challenges, and teams. We used Flask as a way to turn the SQL backend into a useable frontend using Python
