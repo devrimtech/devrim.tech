@@ -70,7 +70,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/kaidevrim/devrim.tech')
+    fetch('https://api.github.com/repos/https://github.com/bchiang7/v4')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -102,10 +102,10 @@ const Footer = () => {
       </StyledSocial>
       <StyledMetadata tabindex="-1">
         <StyledGitHubLink
-          href="https://github.com/kaidevrim"
+          href = "https://github.com/bchiang7/v4/"
           target="_blank"
           rel="nofollow noopener noreferrer">
-          <div>Made by Kai Devrim</div>
+          <div> Made by Brittany  Chiang </div>
 
           {githubInfo.stars && githubInfo.forks && (
             <StyledGitHubInfo>
