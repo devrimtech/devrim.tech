@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Kai McCormick | Programmer',
   siteDescription:
-    'I am a highschool student who attends University Preparatory Academy in San Jose, California. I have a passion for coding and making.',
+    'I am a high school student who attends University Preparatory Academy in San Jose, California. I have a passion for coding and making.',
   siteKeywords:
     'Kai McCormick, Kai Devrim, Devrim, Devrim.tech, software engineer, front-end engineer, web developer, Javascript, San Jose, ',
   siteUrl: 'https://devrim.tech',
@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/kaimccormick',
+      url: 'https://www.linkedin.com/in/kai-mccormick',
     },
     {
       name: 'Twitter',
