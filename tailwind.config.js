@@ -1,10 +1,16 @@
+const colors = require('tailwindcss/colors');
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        'ch-pink': '#FFE1E1',
+        cyan: colors.cyan,
+        teal: colors.teal,
+        emerald: colors.emerald,
+      },
+      fontFamily: {
+        bettergrade: ['BetterGrade', 'sans-serif'],
       },
     },
   },

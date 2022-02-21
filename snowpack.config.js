@@ -2,6 +2,8 @@
 module.exports = {
   mount: {
     public: { url: '/', static: true },
+    images: { url: '/assets', static: true },
+    css: { url: '/css', static: true },
     src: { url: '/dist' },
   },
   experiments: {
