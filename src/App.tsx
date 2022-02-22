@@ -1,13 +1,10 @@
-import React from 'react';
-import './App.css';
-import { Navbar } from './components';
+import "./app.css";
 
-import { Header } from './containers';
-const App = () => (
-  <div className="App">
-    <Navbar />
-    <Header />
-  </div>
-);
-
-export default App;
+export function App() {
+  return (
+    <>
+      <p>Hello World!</p>
+      <a>This is my LINKS!!!</a>
+    </>
+  );
+}
