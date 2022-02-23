@@ -1,14 +1,16 @@
-const { h, Component, render } = preact; /** @jsx h */
-const { Router, route } = preactRouter;
 import "./navbar.css";
-export const navbar = () => (
-	<div class="navbar">
-		<nav>
-			<Router>
-				<Home path="/" />
-				<Profile path="/profile/:user?" />
-				<Error type="404" default />
-			</Router>
-		</nav>
-	</div>
-);
+export const Navbar = () => {
+	return (
+		<header>
+			<nav>
+				<a href="/">Kai Devrim</a>
+				<a href="/blog">Blog</a>
+				<a href="/resume.pdf">Résumé</a>
+				<a href="/now">Now</a>
+				<a href="/contact">Contact</a>
+			</nav>
+		</header>
+	)
+}
+
+export default Navbar;

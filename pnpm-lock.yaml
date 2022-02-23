@@ -6,6 +6,7 @@ specifiers:
   '@babel/plugin-transform-react-jsx': ^7.17.3
   '@preact/preset-vite': ^2.1.5
   preact: ^10.5.15
+  preact-localstorage: ^1.0.2
   preact-router: ^4.0.1
   typescript: ^4.5.4
   vite: ^2.8.0
@@ -15,6 +16,7 @@ dependencies:
   '@babel/plugin-syntax-jsx': 7.16.7_@babel+core@7.17.5
   '@babel/plugin-transform-react-jsx': 7.17.3_@babel+core@7.17.5
   preact: 10.6.6
+  preact-localstorage: 1.0.2
   preact-router: 4.0.1_preact@10.6.6
 
 devDependencies:
@@ -674,6 +676,10 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /preact-localstorage/1.0.2:
+    resolution: {integrity: sha512-F490p/txuivO3BuFZhMYZxP14sbjqm7n5R5IeM5EP6WcO83JCVE8V1q3+Q9POlIW2y1Ql/dzXHJyDiNqKeMuqA==}
+    dev: false
 
   /preact-router/4.0.1_preact@10.6.6:
     resolution: {integrity: sha512-xPyHVLouc5oKIlKu9iEElplNygJYkOn/vfXfZhcoOFqzfAZHZMmT3FsQb0yyPkdt1rwTLFAxek6/5CFkofocSQ==}
