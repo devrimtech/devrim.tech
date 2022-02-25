@@ -28,18 +28,3 @@ a:hover {
   box-shadow: inset 200px 0 0 0 #54b3d6;
   color: white;
 }
-
-@media (prefers-color-scheme: dark) {
-  html, body {
-    background: #1f2121;
-    color: #EFFBFF;
-  }
-  a {
-    color: #fdff89;
-    box-shadow: inset 0 0 0 0 #feffc1;
-  }
-  a:hover {
-    box-shadow: inset 200px 0 0 0 #feffc1;
-    color: black;
-  }
-}
