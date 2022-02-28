@@ -10,6 +10,7 @@ specifiers:
   preact-router: ^4.0.1
   typescript: ^4.5.4
   vite: ^2.8.0
+  wouter-preact: ^2.8.0-alpha.2
 
 dependencies:
   '@babel/core': 7.17.5
@@ -18,6 +19,7 @@ dependencies:
   preact: 10.6.6
   preact-localstorage: 1.0.2
   preact-router: 4.0.1_preact@10.6.6
+  wouter-preact: 2.8.0-alpha.2_preact@10.6.6
 
 devDependencies:
   '@preact/preset-vite': 2.1.7_698d816b37024fcdfcf21e366e54063a
@@ -770,3 +772,11 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /wouter-preact/2.8.0-alpha.2_preact@10.6.6:
+    resolution: {integrity: sha512-f19qDB+HhR6C3lnPFdsJQ8wZZIFzm0m8XciEiBzyB1VtkPE/QaSrm1dxcvqrZu1hKaUA/gdee6OGGj0jGDtgGA==}
+    peerDependencies:
+      preact: ^10.0.0
+    dependencies:
+      preact: 10.6.6
+    dev: false

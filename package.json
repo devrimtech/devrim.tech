@@ -14,7 +14,8 @@
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "preact": "^10.5.15",
     "preact-localstorage": "^1.0.2",
-    "preact-router": "^4.0.1"
+    "preact-router": "^4.0.1",
+    "wouter-preact": "^2.8.0-alpha.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.1.5",

@@ -10,6 +10,7 @@ body {
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: color(srgb 0.925 0.845 0.925);
 }
 
 * {
@@ -22,9 +23,28 @@ a {
   margin: 0 -.25rem;
   padding: 0 .25rem;
   transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+  text-decoration: none;
 }
 
 a:hover {
-  box-shadow: inset 200px 0 0 0 #54b3d6;
+  box-shadow: inset 250px 0 0 0 #54b3d6;
   color: white;
+}
+
+.content {
+  text-align: center;
+  padding-left: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-right: 5%;
+  background-color: white;
+}
+
+.about {
+  padding-top: 50px;
+  text-align: start;
+}
+
+.about h1 {
+
 }
