@@ -9,7 +9,8 @@ header {
 	vertical-align: middle;
 	text-align: center;
 	vertical-align: middle;
-	background-color: white;
+	background-color: #98d8e3;
+	z-index: 999;
 }
 
 nav {
