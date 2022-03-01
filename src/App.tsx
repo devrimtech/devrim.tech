@@ -1,7 +1,7 @@
 //@ts-ignore
 import { Redirect, Route } from "wouter-preact";
 import Home from './components/Home';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import Blog from './pages/blog/blog';
 import Penguin from './pages/blog/posts/penguin';
 import Contact from './pages/contact/contact';
