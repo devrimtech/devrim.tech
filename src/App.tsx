@@ -1,3 +1,4 @@
+//@ts-ignore
 import { Redirect, Route } from "wouter-preact";
 import Home from './components/Home';
 import Navbar from './components/navbar/Navbar';
