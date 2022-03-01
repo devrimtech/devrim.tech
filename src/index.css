@@ -47,7 +47,8 @@ a:hover {
     background: #98d8e3;
   overflow-y: hidden;
   border: black 4px solid;
-  line-height: 24px;
+  line-height: 1.8;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -66,13 +67,10 @@ a:hover {
 
 .header {
   margin-top: 20px;
+  line-height: 1.2;
 }
 
 .about {
   padding-top: 50px;
   text-align: start;
-}
-
-.about h1 {
-
 }
