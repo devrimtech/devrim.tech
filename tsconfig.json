@@ -16,8 +16,9 @@
     "noEmit": true,
     "jsx": "preserve",
     "jsxFactory": "h",
+    "rootDir": "src",
     "jsxFragmentFactory": "Fragment"
   },
-  "include": ["src"],
+  "include": ["src", "src/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
