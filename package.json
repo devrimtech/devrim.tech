@@ -12,9 +12,14 @@
     "@babel/core": "^7.0.0-0",
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@mdx-js/mdx": "^2.0.0",
+    "@mdx-js/preact": "^2.0.0",
+    "@mdx-js/rollup": "^2.0.0",
     "preact": "^10.5.15",
     "preact-localstorage": "^1.0.2",
     "preact-router": "^4.0.1",
+    "rollup": "^2.68.0",
+    "vite-plugin-mdx": "^3.5.10",
     "wouter-preact": "^2.8.0-alpha.2"
   },
   "devDependencies": {

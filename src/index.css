@@ -47,6 +47,7 @@ a:hover {
     background: #98d8e3;
   overflow-y: hidden;
   border: black 4px solid;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 600px) {

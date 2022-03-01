@@ -1,13 +1,18 @@
-import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 import fs from "fs";
+import { defineConfig } from "vite";
+
 // https://vitejs.dev/config/
-export default defineConfig({
-  server: {
-    https: {
-      key: fs.readFileSync("./.cert/key.pem"),
-      cert: fs.readFileSync("./.cert/cert.pem"),
+export default defineConfig(async () => {
+  const mdx = await import('@mdx-js/rollup');
+
+  return {
+    server: {
+      https: {
+        key: fs.readFileSync("./.cert/key.pem"),
+        cert: fs.readFileSync("./.cert/cert.pem")
+      }
     },
-  },
-  plugins: [preact()],
+    plugins: [mdx.default(), preact()]
+  };
 });
