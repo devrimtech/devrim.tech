@@ -3,7 +3,6 @@ import { Redirect, Route } from "wouter-preact";
 import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar';
 import Blog from './pages/blog/blog';
-import Penguin from './pages/blog/posts/penguin';
 import Contact from './pages/contact/contact';
 import Now from './pages/now/now';
 export function App() {
@@ -13,7 +12,6 @@ export function App() {
         <Navbar />
         <>
           <Route path="/" component={Home} />
-          <Route component={Penguin} path="/penguin" />
           <Route component={Blog} path="/blog" />
           <Route component={Now} path="/now" />
           <Route component={Contact} path="/contact" />

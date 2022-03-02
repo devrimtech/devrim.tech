@@ -1,11 +1,9 @@
-import './blog.css';
+import Layout from "./layout";
 
-export const Blog = () => {
+export default function Blog({ Component, pageProps }: any) {
 	return (
-		<div className="blog">
-			<h1> Hello World </h1>
-		</div>
-	)
+		<Layout pageTitle="Blog" description="My Personal Blog">
+			<Component {...pageProps} />
+		</Layout>
+	);
 }
-
-export default Blog;
