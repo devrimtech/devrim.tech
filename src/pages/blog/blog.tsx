@@ -5,11 +5,10 @@ type Props = {
 	path?: string;
 };
 
-const Home = ({ }: Props) => (
+const Blog = ({ }: Props) => (
 	<Fragment>
 		<header>
-			<h1>This is my blog!</h1>
-			<h2>Small descriptive text describing stuff.</h2>
+			<h1>My Blog!</h1>
 		</header>
 
 		<ul>
@@ -22,6 +21,6 @@ const Home = ({ }: Props) => (
 		</ul>
 	</Fragment>
 );
-Home.displayName = 'Home';
+Blog.displayName = 'Blog';
 
-export default Home;
+export default Blog;

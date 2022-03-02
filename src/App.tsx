@@ -1,11 +1,12 @@
-//@ts-ignore
-import { Redirect, Route } from "wouter-preact";
+import Router from 'preact-router';
 import Home from './components/Home';
-import Navbar from './components/Navbar/Navbar';
-import { Blog } from './pages/blog/blog';
+import NavBar from './components/Navbar/Navbar';
+import Blog from './pages/blog/Blog';
+import Post from './pages/blog/post';
 import Contact from './pages/contact/contact';
 import Now from './pages/now/now';
-export function App() {
+//@ts-ignore
+{/* export function App() {
   return (
     <>
       <>
@@ -15,6 +16,7 @@ export function App() {
           <Route component={Blog} path="/blog" />
           <Route component={Now} path="/now" />
           <Route component={Contact} path="/contact" />
+          <Route component={Post} path="/post/:id/:slug?" />
         </>
       </>
       <Route path="/resume">
@@ -22,4 +24,19 @@ export function App() {
       </Route>
     </>
   );
+} */}
+
+export function App() {
+  return (
+    <>
+      <NavBar />
+      <Router>
+        <Home path="/" />
+        <Blog path="/blog" />
+        <Post path="/post/:id/:slug?" />
+        <Now path="/now" />
+        <Contact path="/contact" />
+      </Router>
+    </>
+  )
 }

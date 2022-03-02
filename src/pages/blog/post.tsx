@@ -1,18 +1,39 @@
-import { Link } from "wouter-preact"
-import { HeadPost } from './headpost'
+import { h } from 'preact';
+import { route } from 'preact-router';
+import { useEffect } from 'preact/hooks';
+import posts from './posts/posts.json';
 
-export const Post = ({ post }: any) => {
-	const {
-		link,
-		module: { meta },
-	} = post
+
+type Props = {
+	path?: string;
+	id?: string;
+	slug?: string;
+};
+
+const Post = ({ id, slug }: Props) => {
+	const post = posts.find(item => item.id === Number(id));
+
+	if (!post || !id) {
+		return (
+			<div>
+				Not found! <a href="/">Back</a>
+			</div>
+		);
+	}
+
+	useEffect(() => {
+		if (post && (!slug || slug !== post.slug)) {
+			route(`/post/${post.id}/${post.slug}`, true);
+		}
+	}, []);
 
 	return (
-		<article>
-			<HeadPost meta={meta} />
-			<Link href={'/blog' + link}>
-				<a>Read more →</a>
-			</Link>
-		</article>
-	)
-}
+		<div>
+			<div dangerouslySetInnerHTML={{ __html: post.contents }} />
+			<a href="/">Back</a>
+		</div>
+	);
+};
+Post.displayName = 'Post';
+
+export default Post;
