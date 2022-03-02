@@ -1,6 +1,6 @@
 import NavBar from "../../components/Navbar/Navbar";
 import { Meta, Title } from "../../components/scripts/preact-head";
-export default function Layout({ children, pageTitle, description }: any) {
+export function Layout({ children, pageTitle, description }: any) {
 	return (
 		<>
 			<div>

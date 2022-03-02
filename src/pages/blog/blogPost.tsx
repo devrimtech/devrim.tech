@@ -1,6 +1,6 @@
 import { HeadPost } from './headpost'
 
-export default function BlogPost({ children, meta }: any) {
+export function BlogPost({ children, meta }: any) {
 	return (
 		<>
 			<HeadPost meta={meta} isBlogPost />

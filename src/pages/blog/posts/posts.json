@@ -1,0 +1,16 @@
+[
+  {
+	"id": 2,
+	"title": "Testing out stuff",
+	"slug": "testing-out-stuff",
+	"date": "2019-11-12T05:46:14.855Z",
+	"contents": "<h1>This is test 2</h1><p>Hi! I'm testing stuff out.</p>"
+  },
+  {
+	"id": 1,
+	"title": "My first blog post",
+	"slug": "my-first-blog-post",
+	"date": "2019-11-11T12:59:32.241Z",
+	"contents": "<h1>This is a test</h1><p>Hello, this is a test. Lorem ipsum dolor sit amet.</p><p>Isn't it super cool?</p>"
+  }
+]

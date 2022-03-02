@@ -23,7 +23,7 @@ export default class HeadTag extends Component {
 	}
 }
 
-export const Title = props => <HeadTag tag="title" {...props} />;
-export const Style = props => <HeadTag tag="style" {...props} />;
-export const Meta = props => <HeadTag tag="meta" {...props} />;
-export const Link = props => <HeadTag tag="link" {...props} />;
+export const Title = (props: any) => <HeadTag tag="title" {...props} />;
+export const Style = (props: any) => <HeadTag tag="style" {...props} />;
+export const Meta = (props: any) => <HeadTag tag="meta" {...props} />;
+export const Link = (props: any) => <HeadTag tag="link" {...props} />;
