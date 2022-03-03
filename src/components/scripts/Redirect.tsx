@@ -1,17 +1,12 @@
-import { FunctionalComponent } from 'preact'
-import { route } from 'preact-router'
-import { useEffect } from 'preact/hooks'
+import { Component } from 'preact';
+import { route } from 'preact-router';
 
-interface RedirectProperties {
-	to: string
+export default class Redirect extends Component<any, any>{
+	componentWillMount() {
+		route(this.props.to, true);
+	}
+
+	render() {
+		return null;
+	}
 }
-
-const Redirect: FunctionalComponent<RedirectProperties> = ({ to }: RedirectProperties) => {
-	useEffect(() => {
-		route(to, true)
-	}, [to])
-
-	return null
-}
-
-export default Redirect
