@@ -1,0 +1,20 @@
+{
+  "apexskier.eslint.config.fixOnSave" : "Enable",
+  "apexskier.typescript.config.formatDocumentOnSave" : "true",
+  "apexskier.typescript.config.organizeImportsOnSave" : "true",
+  "apexskier.typescript.config.userPreferences.allowRenameOfImportPath" : false,
+  "apexskier.typescript.config.userPreferences.includeCompletionsForImportStatements" : true,
+  "apexskier.typescript.config.userPreferences.includeCompletionsForModuleExports" : true,
+  "apexskier.typescript.config.userPreferences.quotePreference" : "single",
+  "editor.default_syntax" : "tsx",
+  "mockadillo.npmimports.quote-configuration" : "Single Quote",
+  "prettier.default-config.semi" : "Enable",
+  "prettier.default-config.singleQuote" : "Enable",
+  "prettier.default-config.useTabs" : "Enable",
+  "prettier.format-on-save" : "Disable",
+  "workspace.color" : 6,
+  "workspace.name" : "Website",
+  "workspace.preview_server_allow_external" : true,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "https:\/\/localhost:3000"
+}
