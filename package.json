@@ -18,6 +18,8 @@
     "@mdx-js/rollup": "^2.0.0",
     "@types/node": "^17.0.21",
     "babel-preset-preact": "^2.0.0",
+    "glob": "^7.2.0",
+    "globby": "^13.1.1",
     "js-yaml": "^4.1.0",
     "list-react-files": "^0.2.0",
     "preact": "^10.5.15",
