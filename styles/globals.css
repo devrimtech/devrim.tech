@@ -34,11 +34,25 @@ a:hover {
   color: white;
 }
 
+Link {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #0426fd;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+  text-decoration: none;
+}
+
+Link:hover {
+  box-shadow: inset 250px 0 0 0 #54b3d6;
+  color: white;
+}
+
 .content {
   text-align: center;
 }
 
-.home {
+.pages {
   margin-top: 20px;
     padding-left: 5%;
     margin-left: 20%;
@@ -50,6 +64,66 @@ a:hover {
   line-height: 1.8;
   padding-bottom: 20px;
 }
+
+.header {
+  padding-top: 20px;
+}
+
+.header img {
+  width: 150px;
+  box-shadow: 5px 5px #555;
+}
+
+.webring {
+  overflow: hidden;
+}
+
+.webring iframe {
+  overflow: hidden;
+  user-select: none;
+}
+
+.nav-header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #98d8e3;
+  z-index: 999;
+}
+
+nav {
+  display: inline-block;
+  padding: 0 10px;
+}
+nav a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  nav a {
+    font-size: 15px;
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  nav a {
+    font-size: 11px;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   .home {
