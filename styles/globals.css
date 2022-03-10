@@ -111,6 +111,11 @@ nav a {
   cursor: pointer;
 }
 
+.project-list {
+  text-align: left;
+}
+
+
 @media only screen and (max-width: 420px) {
   nav a {
     font-size: 15px;
