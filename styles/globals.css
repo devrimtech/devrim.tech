@@ -115,6 +115,9 @@ nav a {
   text-align: left;
 }
 
+.now-list {
+  text-align: left;
+}
 
 @media only screen and (max-width: 420px) {
   nav a {

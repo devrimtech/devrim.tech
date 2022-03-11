@@ -40,7 +40,7 @@ function About({ source }: any) {
       <h1 id="projects">Projects</h1>
       <p>Here are just some of the projects I have worked on.</p>
       <ul className="project-list">
-        <li><Link href="https://github.com/devrimtech/devrim.tech">This Website!</Link> I made it using Preact and TypeScript!</li>
+        <li><Link href="https://github.com/devrimtech/devrim.tech">This Website!</Link> I made it using Next.js and TypeScript! (originally was Preact also) </li>
         <li><Link href="https://github.com/KaiDevrim/StarItAll">StarItAll</Link> A simple Golang script that will go through every repo in a Github user or org and star every single repo.</li>
         <li><Link href="https://github.com/KaiDevrim/GameSite">GameSite</Link> A simple website to showcase all of my games and my reviews of them.</li>
         <li><Link href="https://github.com/KaiDevrim/PigLatinSharp">PigLatinSharp</Link> and <Link href="https://github.com/KaiDevrim/PigLatinPy">PiglatinPy</Link> are both English to Piglatin generators.</li>
