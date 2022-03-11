@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../components/header/header";
 import Navbar from "../components/navbar/navbar";
 import Webring from "../components/webring/webring";
+
 const Home: NextPage = () => {
   return (
     <div>

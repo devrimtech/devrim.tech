@@ -25,7 +25,23 @@ function UsesPage() {
       <p> The technology and equipment I use on a daily basis </p>
       <ul className="uses-list">
         <h3> My Main Desk </h3>
-        <li> M1 MacBook Air 16GB 512GB SSD </li>
+        <li> M1 MacBook Air™️ 16GB 512GB SSD </li>
+        <li> 500GB SSD for Backups</li>
+        <li> Elgato™️ HD60S+ for Console Switching </li>
+        <li> MX Master 2S Wireless Mouse </li>
+        <li> Keychron™️ K8 Wireless Keyboard with White LED </li>
+        <li> 34 inch, 1440p, 75hz, Asus™️ Monitor </li>
+        <li> Modded 1st gen PS4 with a 1TB HDD for extra games </li>
+        <li>
+          {" "}
+          Modded 1st gen Nintendo Switch with two 128GB microSD and a 256GB
+          microSD{" "}
+        </li>
+        <li> Nintendo Switch Pro Controller (Xenoblade Edition) </li>
+        <h3> Things Around my Room </h3>
+        <li> iPad Pro 1st gen with 1st gen Apple Pencil </li>
+        <li> FitBit Versa 2 </li>
+        <li>Google Home Mini</li>
       </ul>
       <p> Last updated 2022-03-11 </p>
       <p>

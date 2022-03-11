@@ -131,6 +131,11 @@ nav a {
   text-align: left;
 }
 
+.social-icon:hover {
+  box-shadow: inset 250px 0 0 0 #54b3d6;
+  color: white;
+}
+
 @media only screen and (max-width: 420px) {
   nav a {
     font-size: 15px;
