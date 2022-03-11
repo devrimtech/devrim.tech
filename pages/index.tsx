@@ -35,8 +35,7 @@ function About({ source }: any) {
           or playing games,
         </Link>{" "}
         <Link href="https://kitsu.io/KaiDevrim">or watching anime,</Link> or
-        going to class,{" "}
-        <Link href="https://photos.dvr.im">or taking photos</Link>. I also am an
+        going to class, <Link href="/">or taking photos</Link>. I also am an
         active member in one of the largest programming communities,{" "}
         <Link href="https://hackclub.com">Hack Club</Link> and even wrote{" "}
         <Link href="https://workshops.hackclub.com/minecraft_modding">
