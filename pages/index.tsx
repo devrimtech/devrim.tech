@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           content="kai, kai devrim, kai mccormick, devrim, devrimkai, devrim kai, kai devrim mccormick, kai the penguin, penguin kai, penguinkai"
         />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="author" content="Kai Devrim" />
         <meta name="title" content="Kai Devrim" />
