@@ -1,12 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  images: {
-    loader: "custom",
-  }
-}
+};
 
-const withMDX = require('@next/mdx')({
+const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
@@ -14,11 +11,11 @@ const withMDX = require('@next/mdx')({
     // If you use `MDXProvider`, uncomment the following line.
     providerImportSource: "@mdx-js/react",
   },
-})
+});
 module.exports = withMDX({
   // Append the default value with md extensions
-  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-})
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+});
 
 module.exports = {
   webpack5: true,
@@ -29,4 +26,4 @@ module.exports = {
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
