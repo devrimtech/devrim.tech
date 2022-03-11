@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsGithub, BsTwitter, BsReddit } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IconContext } from "react-icons";
-const iconStyles = { padding: "0 5px", fontSize: "24px" };
+const iconStyles = { padding: "0 5px", fontSize: "24px", cursor: "pointer" };
 export const Header = () => {
   return (
     <div className="header content">
