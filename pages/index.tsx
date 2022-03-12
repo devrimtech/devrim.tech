@@ -59,7 +59,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Navbar />
         <About />
       </main>
     </div>
