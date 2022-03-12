@@ -33,7 +33,7 @@ a {
   color: #0426fd;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: color 0s ease-in-out, box-shadow 0s ease-in-out;
   text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ Link {
   color: #0426fd;
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: color 0s ease-in-out, box-shadow 0s ease-in-out;
   text-decoration: none;
 }
 
