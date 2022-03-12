@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           property="og:description"
           content="Part-Time High School Student, Part-Time Computer Wizard"
         />
-        <meta property="og:image" content="meta.png" />
+        <meta property="og:image" content="https://devrim.tech/meta.png" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://devrim.tech/" />
