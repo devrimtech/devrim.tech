@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsTwitter, BsReddit } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import { IconContext } from "react-icons";
 const iconStyles = { padding: "0 5px", fontSize: "24px", cursor: "pointer" };
@@ -11,16 +11,16 @@ export const Header = () => {
       <br />
       <IconContext.Provider value={{ size: "1.5em" }}>
         <div className="social-icons">
-          <Link href="https://github.com/KaiDevrim">
+          <Link href="https://github.com/KaiDevrim" passHref>
             <BsGithub style={iconStyles} className="social-icon" />
           </Link>
-          <Link href="https://twitter.com/DevrimKai">
+          <Link href="https://twitter.com/DevrimKai" passHref>
             <BsTwitter style={iconStyles} className="social-icon" />
           </Link>
-          <Link href="https://reddit.com/u/koldores">
-            <BsReddit style={iconStyles} className="social-icon" />
+          <Link href="https://www.linkedin.com/in/kai-mccormick/" passHref>
+            <BsLinkedin style={iconStyles} className="social-icon" />
           </Link>
-          <Link href="mailto:kai@devrim.tech">
+          <Link href="mailto:kai@devrim.tech" passHref>
             <IoMdMail style={iconStyles} className="social-icon" />
           </Link>
         </div>
