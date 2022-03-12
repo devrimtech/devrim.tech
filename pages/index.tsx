@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           name="description"
           content="Part-Time High School Student, Part-Time Computer Wizard"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/jpg" href="/Kai.jpg" />
         <meta httpEquiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
         <title>Kai Devrim</title>
         <meta
