@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 const iconStyles = { padding: "0 5px", fontSize: "24px", cursor: "pointer" };
 export const Header = () => {
   return (
-    <div className="header content">
+    <div className="header">
       <Image alt="Kai" src="/Kai.jpg" width="150" height="150" />
       <br />
       <IconContext.Provider value={{ size: "1.5em" }}>
@@ -28,7 +28,6 @@ export const Header = () => {
       <h2> Hello! My name is </h2>
       <h1> Kai Devrim McCormick </h1>
       <p> Student • Really Bad Hacker • He/Him </p>
-      <Link href="/penguin"> I also REALLY love penguins </Link>
     </div>
   );
 };
