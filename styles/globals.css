@@ -136,13 +136,6 @@ nav a {
   color: white;
 }
 
-@media only screen and (max-width: 420px) {
-  nav a {
-    font-size: 15px;
-    padding: 0 5px;
-  }
-}
-
 @media only screen and (max-width: 300px) {
   nav a {
     font-size: 11px;
