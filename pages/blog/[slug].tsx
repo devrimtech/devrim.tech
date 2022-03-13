@@ -3,13 +3,14 @@ import { MDXRemote } from "next-mdx-remote";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-
 const PostPage = ({ frontMatter: { title }, mdxSource }: any) => {
   return (
-    <div className="content pages blog">
-      <h1 className="blog-title">{title}</h1>
-      <MDXRemote {...mdxSource} />
-    </div>
+    <>
+      <div className="content pages blog">
+        <h1 className="blog-title">{title}</h1>
+        <MDXRemote {...mdxSource} />
+      </div>
+    </>
   );
 };
 
