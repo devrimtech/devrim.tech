@@ -5,30 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Blog({ posts }: any) {
   return (
-    <div>
+    <div className="blog-root pages">
       {posts.map((post: any, index: any) => (
         <Link href={"/blog/" + post.slug} passHref key={index}>
-          <div style={{ maxWidth: "540px" }}>
-            <div>
-              <div>
-                <div>
-                  <h5>{post.frontMatter.title}</h5>
-                  <p>{post.frontMatter.description}</p>
-                  <p>
-                    <small>{post.frontMatter.date}</small>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <Image
-                  src={post.frontMatter.thumbnailUrl}
-                  alt="thumbnail"
-                  width={500}
-                  height={400}
-                  objectFit="cover"
-                />
-              </div>
-            </div>
+          <div className="blog-details">
+            <header>{post.frontMatter.title}</header>
+            <section>{post.frontMatter.description}</section>
+            <footer>{post.frontMatter.date}</footer>
+            <hr />
           </div>
         </Link>
       ))}
