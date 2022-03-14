@@ -12,6 +12,9 @@ export default function Blog({ posts }: any) {
             <div className="blog-details">
               <header>{post.frontMatter.title}</header>
               <section>{post.frontMatter.description}</section>
+              <time>
+                Estimated Reading Time: {post.frontMatter.time} minutes
+              </time>
               <footer>{post.frontMatter.date}</footer>
               <hr />
             </div>

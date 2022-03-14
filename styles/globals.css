@@ -156,6 +156,12 @@ nav a {
 
 .blog-details section {
   color: #2b2b2b;
+  font-size: 16px;
+}
+
+.blog-details time {
+  color: #515050;
+  font-size: 14px;
 }
 
 .blog-details:hover {
