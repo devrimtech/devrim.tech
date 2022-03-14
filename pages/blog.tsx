@@ -34,7 +34,11 @@ export const getStaticProps = async () => {
       slug: filename.split(".")[0],
     };
   });
-  posts = _.reverse(_.sortBy(posts, (post) => post.frontMatter.date));
+  let newPosts: any = _.remove(posts, (post) => {
+    return post.frontMatter.visibility === "public";
+  });
+  posts = _.reverse(_.sortBy(newPosts, (post) => post.frontMatter.date));
+
   return {
     props: {
       posts,
