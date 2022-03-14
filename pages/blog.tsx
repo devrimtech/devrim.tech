@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import _ from "lodash";
 export default function Blog({ posts }: any) {
   return (
     <>
@@ -22,7 +23,7 @@ export default function Blog({ posts }: any) {
 }
 export const getStaticProps = async () => {
   const files = fs.readdirSync(path.join("posts"));
-  const posts = files.map((filename) => {
+  let posts = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
       path.join("posts", filename),
       "utf-8"
@@ -33,6 +34,7 @@ export const getStaticProps = async () => {
       slug: filename.split(".")[0],
     };
   });
+  posts = _.reverse(_.sortBy(posts, (post) => post.frontMatter.date));
   return {
     props: {
       posts,

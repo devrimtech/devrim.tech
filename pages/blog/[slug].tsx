@@ -3,7 +3,13 @@ import { MDXRemote } from "next-mdx-remote";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Prism from "prismjs";
+import { useEffect } from "react";
+
 const PostPage = ({ frontMatter: { title }, mdxSource }: any) => {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
   return (
     <>
       <div className="content pages blog">

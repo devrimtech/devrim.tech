@@ -1,8 +1,7 @@
 ---
-title: Minecraft Modding
-date: "March 12 2022"
-description: Make your first Minecraft mod using Forge and IntelliJ IDEA
-tags: ["random"]
+title: "Minecraft Mod"
+date: "February 4 2021"
+description: "Make your first Minecraft mod using Forge and IntelliJ IDEA"
 ---
 
 Learning to mod Minecraft is a very simple process and can help anyone learn programming. Minecraft uses the Java language which albeit old, is still very popular and learning it is still useful. This Minecraft modding workshop will go from setting up IntelliJ IDEA to making an item, creative inventory tab, and a block. The result will look something like this:
@@ -214,21 +213,21 @@ import org.apache.logging.log4j.Logger;
 
 @Mod("playerevolutions")
 public class PlayerEvolutions {
-	private static final Logger LOGGER = LogManager.getLogger();
-	public static final String MOD_ID = "playerevolutions";
+    private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "playerevolutions";
 
-	public PlayerEvolutions() {
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-		MinecraftForge.EVENT_BUS.register(this);
-	}
+    public PlayerEvolutions() {
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        MinecraftForge.EVENT_BUS.register(this);
+    }
 
-	private void setup (final FMLCommonSetupEvent event) {
+    private void setup (final FMLCommonSetupEvent event) {
 
-	}
-	private void doClientStuff(final FMLClientSetupEvent event) {
+    }
+    private void doClientStuff(final FMLClientSetupEvent event) {
 
-	}
+    }
 }
 ```
 
@@ -273,7 +272,7 @@ public class RegistryHandler {
   public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
 
   public static void init() {
-	ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
   }
 }
 ```
@@ -297,15 +296,15 @@ Make sure to import your `RegistryHandler` class.
 ```java
 @Mod("playerevolutions")
 public class PlayerEvolutions {
-	private static final Logger LOGGER = LogManager.getLogger();
-	public static final String MOD_ID = "playerevolutions";
+    private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "playerevolutions";
 
-	public ModWorkshop() {
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
-		RegistryHandler.init(); // here
-		MinecraftForge.EVENT_BUS.register(this);
-	}
+    public ModWorkshop() {
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        RegistryHandler.init(); // here
+        MinecraftForge.EVENT_BUS.register(this);
+    }
 ```
 
 </details>
@@ -341,11 +340,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class RegistryHandler {
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ModWorkshop.MOD_ID);
-	public static void init() {
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
-	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, ModWorkshop.MOD_ID);
+    public static void init() {
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
 }
 
 ```
@@ -373,9 +372,9 @@ Once, you're inside the `ItemBase` class:
 - IntelliJ should automatically add a few new lines of code:
   ```java
   public class ItemBase extends Item {
-    public ItemBase(Properties properties) {
-  	  super(properties);
-    }
+      public ItemBase(Properties properties) {
+          super(properties);
+      }
   }
   ```
 - Inside the parentheses of the `ItemBase` constructor, remove `Properties properties`.
@@ -396,9 +395,9 @@ import com.yourusername.playerevolutions.PlayerEvolutions;
 
 public class ItemBase extends Item {
 
-	public ItemBase() {
-		super(new Item.Properties().group(PlayerEvolutions.TAB));
-	}
+    public ItemBase() {
+        super(new Item.Properties().group(PlayerEvolutions.TAB));
+    }
 }
 ```
 
@@ -408,10 +407,10 @@ A tab in Minecraft is where you will find the item in creative mode. To fix the 
 
 ```java
 public static final ItemGroup TAB = new ItemGroup("playerEvolutions") {
-	@Override
-	public ItemStack createIcon() {
-		return new ItemStack(RegistryHandler.RUBY.get());
-	}
+    @Override
+    public ItemStack createIcon() {
+        return new ItemStack(RegistryHandler.RUBY.get());
+    }
 };
 ```
 
@@ -486,17 +485,17 @@ public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_
 
 ```java
 public class RegistryHandler {
-	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
-	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PlayerEvolutions.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, PlayerEvolutions.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PlayerEvolutions.MOD_ID);
 
-	public static void init() {
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
+    public static void init() {
+        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    }
 
-	public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
-	public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
-	public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+    public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
 }
 ```
 
@@ -514,7 +513,7 @@ Open the `BlockItemBase` class and add this:
 ```java
 public class BlockItemBase extends BlockItem {
   public BlockItemBase(Block block) {
-	super(block, new Item.Properties().group(PlayerEvolutions.TAB));
+    super(block, new Item.Properties().group(PlayerEvolutions.TAB));
   }
 }
 ```
@@ -524,9 +523,9 @@ Next, open the `RubyBlock` class. Add this:
 ```java
 public class RubyBlock extends Block {
   public RubyBlock() {
-	super(Block.Properties.create(Material.IRON)
-	  .harvestTool(ToolType.PICKAXE)
-	);
+    super(Block.Properties.create(Material.IRON)
+      .harvestTool(ToolType.PICKAXE)
+    );
   }
 }
 ```
