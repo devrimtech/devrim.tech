@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\npnpm run build"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\npnpm run ssl"
+    }
+  },
+  "identifier" : "1DAC2BAC-09F3-4039-A9B3-65F7AA0A3D89",
+  "openLogOnRun" : "start"
+}

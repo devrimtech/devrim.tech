@@ -1,0 +1,6 @@
+{
+  "workspace.preview_server_allow_external" : true,
+  "workspace.preview_server_port" : 3000,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "https:\/\/localhost:3000"
+}
