@@ -1,27 +1,27 @@
 ---
 title: My Homelab Journey
 date: "March 14 2022"
-description: My history of running a server in my closet and how you can run one too!
-visibility: hidden
-time: 12
-tags: ["technology"]
+description: My history of running a server in my closet!
+visibility: public
+time: 7
+tags: ["technology", "server", "life"]
 ---
 
 ## Raspberry Pi Adventures
 
-Just like everyone else nowadays, I also started with a nifty little [Single-Board Computer](https://en.wikipedia.org/wiki/Single-board_computer) known as the [Raspberry Pi](https://www.raspberrypi.org/). I got it from my local Fry's (now gone) in 2016 and immediately started loading up the Raspberry PiOS on it. The first few uses I had for it were of course emulating different retro consoles like the GameBoy and SNES using [RetroPie](retropie.org.uk). I then set out to make a portable retro gaming console filled to the brim with old games that I would probably never play. I decided to make a wristwatch device that connected to an e-ink display and I could play the games using a DualShock 4 Controller (PS4). The Pi was charged using a battery pack that I stored in my pocket. I kept this project around like all my other Pi projects, which was for about a week. <img src="/rpi.jpeg" alt="My Finished Built" width="500" height="400" />
+Just like everyone else nowadays, I also started with a nifty little [Single-Board Computer](https://en.wikipedia.org/wiki/Single-board_computer) known as the [Raspberry Pi](https://www.raspberrypi.org/). I got it from my local Fry's (now gone) in 2016 and immediately started loading up the Raspberry PiOS on it. The first few uses I had for it were of course emulating different retro consoles like the GameBoy and SNES using [RetroPie](retropie.org.uk). I then set out to make a portable retro gaming console filled to the brim with old games that I would probably never play. I decided to make a wristwatch device that connected to an e-ink display and I could play the games using a DualShock 4 Controller (PS4). The Pi was charged using a battery pack that I stored in my pocket. I kept this project around like all my other Pi projects, which was for about a week. ![My Finished Build](/rpi.jpeg)
 
 ### What about the Server?
 
-After building the watch I then needed to find another project to use my Pi for. I just so happened to find this awesome tool called [PiHole](https://pihole.org) out and became fascinated with using my Pi as my ultimate network device. I then started installing PiHole which was a simple DNS server that would block ads. Along with PiHole I also experimented with turning the Pi into a Router, a VPN Server, and a WiFI Hotspot. I don't think I got particularly success into doing all of that as a lot of it was outside my range of knowledge at the time but it did introduce me to many of the concepts that I would use for running servers to this day. <img src="/pihole.png" alt="PiHole Web GUI" width="640" height="480" />
+After building the watch I then needed to find another project to use my Pi for. I just so happened to find this awesome tool called [PiHole](https://pihole.org) out and became fascinated with using my Pi as my ultimate network device. I then started installing PiHole which was a simple DNS server that would block ads. Along with PiHole I also experimented with turning the Pi into a Router, a VPN Server, and a WiFI Hotspot. I don't think I got particularly successful at doing all of that as a lot of it was outside my range of knowledge at the time, but it did introduce me to many of the concepts that I would use for running servers to this day. ![PiHole Web GUI](/pihole.png)
 
 ## The Mac Mini Catalyst
 
-Around this time I wanted to get into hosting gaming servers and running a NAS (Network Attached Storage). I had a spare Mac Mini lying around so I remembered that my school had a closet of Mac Mini servers so I started to use it. I plugged it in and started installing the Mac Server tool and played around with it. After that I started trying to install a Minecraft Server on it and was met with the catalyst that made me build my own server. The Mac Mini had only 4GB of RAM which was not enough to run a Minecraft Server.
+Around this time I wanted to get into hosting gaming servers and running a NAS (Network Attached Storage). I had a spare Mac Mini lying around, so I remembered that my school had a closet of Mac Mini servers, so I started to use it. I plugged it in and started installing the Mac Server tool and played around with it. After that I started trying to install a Minecraft Server on it and was met with the catalyst that made me build my own server. The Mac Mini had only 4GB of RAM, which was not enough to run a Minecraft Server.
 
 ## Building My Own
 
-Although I had many other options to use the Mac Mini for I ultimately decided to go on [PCPartPicker](https://pcpartpicker.com) and start building my own. Since I did not know much about servers at the time I built a desktop computer with a big case. In hindsight this was not a good idea but for a 13 year old kid who had never built a computer or even knew server hardware. I settled on the following build:
+Although I had many other options to use the Mac Mini for, I ultimately decided to go on [PCPartPicker](https://pcpartpicker.com) and start building my own. Since I did not know much about servers at the time, I built a desktop computer with a big case. In hindsight this was not a good idea, but for a 13 year old kid who had never built a computer or even knew server hardware. I settled on the following build:
 
 - CPU: [AMD A8-9600 Radeon (4 Cores, 3.1Ghz)](https://www.amazon.com/gp/product/B078HNG7VD)
 - MotherBoard: [MSI ProSeries AMD A320](https://www.amazon.com/gp/product/B0822M7BS5)
@@ -31,12 +31,29 @@ Although I had many other options to use the Mac Mini for I ultimately decided t
 - Case: [DEEPCOOL MATREXX 30 Mini-ITX](https://www.amazon.com/gp/product/B07QZDM8K4)
 - OS: [Ubuntu Server 20.04](https://ubuntu.com/server)
 
-<img src="/pc.jpeg" alt="Finished PC Build" width="700" height="480" />
+![Finished PC Build](/pc.png)
 
 ## Finding the Perfect OS
 
-I started with Ubuntu Server because Ubuntu was the biggest name in the Linux world and I had experience with using Pop!\_OS and liked the apt package manager. I stuck with Ubuntu Server until my networking on it broke for some reason and none of my friends could figure out why. I then switched to Debian and started learning Docker on it. There was a lot of fun stuff I could deploy using Docker like a [Minecraft Server](https://github.com/itzg/docker-minecraft-server) or like all the fun stuff that [LinuxServer.io](https://linuxserver.io) had. There were so many possibilities I had with Docker and I was learning like crazy. That is not to say there were not a lot of problems I faced, like I did not understand Nginx at all and constantly ran into errors when using the [Swag container](https://github.com/linuxserver/docker-swag) which was a simplified setup of Nginx. There was a lot to learn and a lot my setup could improve on. Throughout the months I reinstalled Debian but one day I had a friend suggest to me that I should use this OS called [Proxmox](https://www.proxmox.com/en/). I went to install it and it really is one of the best tools I ever learned to use.
+I started with Ubuntu Server because Ubuntu was the biggest name in the Linux world and I had experience with using Pop!\_OS and liked the apt package manager. I stuck with Ubuntu Server until my networking on it broke for some reason and none of my friends could figure out why. I then switched to Debian and started learning Docker on it. There was a lot of fun stuff I could deploy using Docker like a [Minecraft Server](https://github.com/itzg/docker-minecraft-server) or like all the fun stuff that [LinuxServer.io](https://linuxserver.io) had. There were so many possibilities I had with Docker and I was learning like crazy. That is not to say there were not a lot of problems I faced, like I did not understand Nginx at all and constantly ran into errors when using the [Swag container](https://github.com/linuxserver/docker-swag), which was a simplified Nginx setup. There was a lot to learn and a lot my setup could improve on. Throughout the months I reinstalled Debian, but one day I had a friend suggest to me that I should use this OS called [Proxmox](https://www.proxmox.com/en/). I went to install it and it really is one of the best tools I ever learned to use.
 
 ## What is Proxmox
 
-Proxmox in technical terms is just a type 1 hypervisor with a remote Web GUI built upon Debian. In layman terms it means that it could run Virtual Machines or multiple Operating Systems under it.
+Proxmox in technical terms is just a Type 1 hypervisor with a remote Web GUI built upon Debian. In layman's terms, it means that it could run Virtual Machines or multiple Operating Systems with very little overhead. Since I had experience and enjoyed the experience of Debian, it was a perfect fit for me and it is what I use to this day.
+
+## What is Next
+
+My journey throughout servers has been a long one with a lot of learning and there is still a lot more I can do to improve my server setup. Currently, I am learning Ansible and Terraform. Ansible automates the post vm setup, like installing packages and configuring users. Terraform is Infrastructure as Code (IaC) which means that the vm hardware and the pre-configuration is structured as code. Terraform is also used in managing [DNS like CloudFlare](https://github.com/gleich/infra), which is awesome. I also want to get look into getting actual server equipment, like a rack mount or a 1U. As seen through my journey in building a server, anyone can run a server and you do not need to spend a lot of money on one either. I highly suggest anyone looking for a new hobby to pick up server management as there are lots of great communities that I would not be here without.
+
+## I Would Not Be Here Without
+
+- TechnoTim
+- NetworkChuck
+- r/SelfHosting
+- r/Datahoarders
+- Hack Club
+- LinuxServer.io
+- Everyone for providing a welcoming space!
+
+Questions? Comments? Would Like to chat?
+[kai@devrim.tech](mailto:kai@devrim.tech)
