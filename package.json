@@ -26,6 +26,8 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
+    "rehype-image-size": "^1.0.0",
+    "rehype-img-size": "^1.0.1",
     "swc": "^1.0.11",
     "webpack": "^5.70.0"
   },

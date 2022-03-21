@@ -5,6 +5,12 @@ import path from "path";
 import matter from "gray-matter";
 import Prism from "prismjs";
 import { useEffect } from "react";
+import rehypeImgSize from "rehype-img-size";
+import Image from "../../components/blog/image";
+
+const components = {
+  img: Image,
+};
 
 const PostPage = ({ frontMatter: { title }, mdxSource }: any) => {
   useEffect(() => {
@@ -14,7 +20,7 @@ const PostPage = ({ frontMatter: { title }, mdxSource }: any) => {
     <>
       <div className="content pages blog">
         <h1 className="blog-title">{title}</h1>
-        <MDXRemote {...mdxSource} />
+        <MDXRemote {...mdxSource} components={components} />
       </div>
     </>
   );
@@ -39,7 +45,11 @@ export const getStaticProps = async ({ params: { slug } }: any) => {
     "utf-8"
   );
   const { data: frontMatter, content } = matter(markdownWithMeta);
-  const mdxSource = await serialize(content);
+  const mdxSource = await serialize(content, {
+    mdxOptions: {
+      rehypePlugins: [[rehypeImgSize as any, { dir: "public" }]],
+    },
+  });
   return {
     props: {
       frontMatter,
