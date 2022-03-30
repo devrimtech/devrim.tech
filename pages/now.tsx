@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import Meta from "../components/meta/meta";
 const Now: NextPage = () => {
   return (
     <>
+      <Meta title="/now" description="Here is what I am up to nowadays" />
       <main>
         <NowPage />
       </main>

@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import Meta from "../components/meta/meta";
 import Link from "next/link";
 const Uses: NextPage = () => {
   return (
     <>
+      <Meta
+        title="/uses"
+        description="The technology and equipment I use on a daily basis"
+      />
       <main>
         <UsesPage />
       </main>

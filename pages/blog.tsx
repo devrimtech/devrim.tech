@@ -3,10 +3,14 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import _ from "lodash";
-
+import Meta from "../components/meta/meta";
 export default function Blog({ posts }: any) {
   return (
     <>
+      <Meta
+        title="Kai's Awesome Blog Index"
+        description="A list of all my blog posts and various other writings"
+      />
       <div className="blog-root pages">
         {posts.map((post: any, index: any) => (
           <Link href={"/blog/" + post.slug} passHref key={index}>

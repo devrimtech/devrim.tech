@@ -7,17 +7,21 @@ import Prism from "prismjs";
 import { useEffect } from "react";
 import rehypeImgSize from "rehype-img-size";
 import Image from "../../components/blog/image";
-
+import Meta from "../../components/meta/meta";
 const components = {
   img: Image,
 };
 
-const PostPage = ({ frontMatter: { title }, mdxSource }: any) => {
+const PostPage = ({
+  frontMatter: { title, description, icon },
+  mdxSource,
+}: any) => {
   useEffect(() => {
     Prism.highlightAll();
   }, []);
   return (
     <>
+      <Meta title={title} description={description} icon={icon} />
       <div className="content pages blog">
         <h1 className="blog-title">{title}</h1>
         <MDXRemote {...mdxSource} components={components} />
