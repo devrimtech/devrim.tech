@@ -29,7 +29,7 @@ function NowPage() {
           University of Waterloo, or University of British Columbia for college.
         </li>
         <h3> Learning about Computers: </h3>
-        <li> Studying for the CompTIA A+ exam. </li>
+        <li> Programming my Cross-Platform Youtube Downloading app, <Link href="https://github.com/KaiDevrim/Downstream"> DownStream </Link></li>
         <li> Volunteering for Coding Organizations like CodeDay Bay Area. </li>
         <li> Programming whatever I find interesting. </li>
         <li> Participating in Hack Club. </li>
@@ -41,7 +41,7 @@ function NowPage() {
         </li>
         <li> Having fun with my dog, Mocha. </li>
       </ul>
-      <p> Last updated 2022-03-10 </p>
+      <p> Last updated 2022-05-05 </p>
       <p>
         Credits to <Link href="https://nownownow.com"> Derek Sivers </Link>
       </p>
