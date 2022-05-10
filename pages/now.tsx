@@ -31,7 +31,7 @@ function NowPage() {
         <h3> Learning about Computers: </h3>
         <li> Programming my Cross-Platform Youtube Downloading app, <Link href="https://github.com/KaiDevrim/Downstream"> DownStream </Link></li>
         <li> Volunteering for Coding Organizations like CodeDay Bay Area. </li>
-        <li> Programming whatever I find interesting. </li>
+        <li> Taking the CS50 course on edX to further improve my programming skills. </li>
         <li> Participating in Hack Club. </li>
         <h3> Entertaining Myself: </h3>
         <li> Watching a lot on my Plex Server. </li>
