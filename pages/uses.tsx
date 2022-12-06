@@ -24,6 +24,7 @@ function UsesPage() {
         <h3> My Main Desk </h3>
         <li> M1 MacBook Air 16GB 512GB SSD </li>
         <li> 500GB SSD for Backups</li>
+        <li> 256GB Steam Deck with 2 microSD cards, 1TB each</li>
         <li> Elgato HD60S+ for Console Switching </li>
         <li> MX Master 2S Wireless Mouse </li>
         <li> Keychron K8 Wireless Keyboard with White LED </li>
