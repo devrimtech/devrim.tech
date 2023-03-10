@@ -24,6 +24,15 @@ module.exports = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/resume",
+        destination: "/Resume.pdf",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

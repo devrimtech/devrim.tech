@@ -19,6 +19,8 @@ specifiers:
   lodash: ^4.17.21
   next: 12.1.0
   next-mdx-remote: ^4.0.0
+  next-navigation: ^1.0.6
+  nextjs-redirect: ^6.0.1
   prettier: ^2.6.2
   prism-react-renderer: ^1.3.1
   prismjs: ^1.27.0
@@ -44,6 +46,8 @@ dependencies:
   lodash: 4.17.21
   next: 12.1.0_sfoxds7t5ydpegc3knd667wn6m
   next-mdx-remote: 4.0.0_sfoxds7t5ydpegc3knd667wn6m
+  next-navigation: 1.0.6
+  nextjs-redirect: 6.0.1_next@12.1.0+react@17.0.2
   prettier: 2.6.2
   prism-react-renderer: 1.3.1_react@17.0.2
   prismjs: 1.27.0
@@ -2384,6 +2388,12 @@ packages:
       - supports-color
     dev: false
 
+  /next-navigation/1.0.6:
+    resolution: {integrity: sha512-D4JXnngfeDFA+zsIWFcl8tr/rnCOXEUgJElfQ6zdcpHuNgR4peHKsk+FE1AGykEufKC7xgwv9oOSGK16c1VGiQ==}
+    dependencies:
+      react: 16.14.0
+    dev: false
+
   /next/12.1.0_sfoxds7t5ydpegc3knd667wn6m:
     resolution: {integrity: sha512-s885kWvnIlxsUFHq9UGyIyLiuD0G3BUC/xrH0CEnH5lHEWkwQcHOORgbDF0hbrW9vr/7am4ETfX4A7M6DjrE7Q==}
     engines: {node: '>=12.22.0'}
@@ -2424,6 +2434,16 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+
+  /nextjs-redirect/6.0.1_next@12.1.0+react@17.0.2:
+    resolution: {integrity: sha512-SScRdqhGwbD9HbATM+6KMoRyW5QdsPtBBknPPUBxeItnv3wOrhII4pW+0TrvglWNxeRUwI2GsnrDHCV/6juBtQ==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+    dependencies:
+      next: 12.1.0_sfoxds7t5ydpegc3knd667wn6m
+      react: 17.0.2
+    dev: false
 
   /node-releases/2.0.2:
     resolution: {integrity: sha512-XxYDdcQ6eKqp/YjI+tb2C5WM2LgjnZrfYg4vgQt49EK268b6gYCHsBLrK2qvJo4FmCtqmKezb0WZFK4fkrZNsg==}
@@ -2612,7 +2632,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
 
   /property-information/6.1.1:
     resolution: {integrity: sha512-hrzC564QIl0r0vy4l6MvRLhafmUowhO/O3KgVSoXIbbA2Sz4j8HGpJc6T2cubRVwMwpdiG/vKGfhT4IixmKN9w==}
@@ -2657,7 +2676,15 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-    dev: true
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+    dev: false
 
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
