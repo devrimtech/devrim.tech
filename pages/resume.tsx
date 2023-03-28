@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Meta from "../components/meta/meta";
 import Link from "next/link";
 import redirect from 'nextjs-redirect'
-const Redirect = redirect('/Resume.pdf')
+const Redirect = redirect('/Kai_McCormick_Resume.pdf')
 const Resume: NextPage = () => {
     return (
         <>
@@ -20,7 +20,7 @@ function ResumePage() {
     return (
         <div className="resume-root pages content">
             <Link
-                href="/Resume.pdf"
+                href="/Kai_McCormick_Resume.pdf"
             >Download Resume</Link>
         </div>
     );

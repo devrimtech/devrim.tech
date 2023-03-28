@@ -18,6 +18,40 @@ module.exports = withMDX({
 });
 
 module.exports = {
+  images: {
+    formats: [
+      "image/avif",
+      "image/webp",
+      "image/png",
+      "image/jpeg",
+      "image/jpg",
+    ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+        port: "",
+        pathname: "/KaiDevrim/**/*",
+      },
+      {
+        protocol: "https",
+        hostname: "githubusercontent.com",
+        port: "",
+        pathname: "",
+      },
+      {
+        protocol: "https",
+        hostname: "github.com",
+        port: "",
+        pathname: "",
+      },
+    ],
+    domains: [
+      "raw.githubusercontent.com",
+      "github.com",
+      "githubusercontent.com",
+    ],
+  },
   webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = { fs: false };

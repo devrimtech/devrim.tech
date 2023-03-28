@@ -27,7 +27,7 @@ export const Header = () => {
       </IconContext.Provider>
       <h2> Hello! My name is </h2>
       <h1> Kai Devrim McCormick </h1>
-      <p> Student • Really Bad Hacker • He/Him </p>
+      <p> Student • King of the Pirates • He/Him </p>
     </div>
   );
 };

@@ -215,3 +215,14 @@ hr {
   padding-top: 50px;
   text-align: start;
 }
+
+.project-image {
+  border-color: #000000 !important;
+  border-radius: 10px !important;
+  border-style: solid !important;
+  overflow: hidden !important;
+}
+
+.project-image:hover {
+  cursor: pointer;
+}
