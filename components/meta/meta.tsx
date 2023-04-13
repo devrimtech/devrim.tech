@@ -3,13 +3,14 @@ import React from "react";
 
 // Props for description, title, and icon
 export const Meta = (props: any) => {
+  let description: string = "Full-Time University Student, Part-Time Computer Wizard"
   return (
     <Head>
       <meta
         name="description"
         content={
           props.description ||
-          "Part-Time High School Student, Part-Time Computer Wizard"
+          description
         }
       />
       <link rel="icon" type="image/jpg" href="https://devrim.tech/Kai.jpg" />
@@ -30,7 +31,7 @@ export const Meta = (props: any) => {
         itemProp="description"
         content={
           props.description ||
-          "Part-Time High School Student, Part-Time Computer Wizard"
+          description
         }
       />
       <meta
@@ -45,7 +46,7 @@ export const Meta = (props: any) => {
         property="og:description"
         content={
           props.description ||
-          "Part-Time High School Student, Part-Time Computer Wizard"
+          description
         }
       />
       <meta
@@ -60,7 +61,7 @@ export const Meta = (props: any) => {
         property="twitter:description"
         content={
           props.description ||
-          "Part-Time High School Student, Part-Time Computer Wizard"
+          description
         }
       />
       <meta
