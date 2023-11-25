@@ -22,9 +22,9 @@ function NowPage() {
         <li> I am currently at my new home, Seattle Washington! </li>
         <h3> Learning about Computers: </h3>
         <li> Programming various projects. <Link href="https://github.com/KaiDevrim/"> What I am working on currently </Link></li>
-        <li> Volunteering for Coding Organizations like CodeDay Seattle. </li>
-        <li> Reading books on various programming topics, like Data Structures and Algorithms or on C#</li>
-        <li> Participating in Hack Club. </li>
+        <li> In the IEEE club. </li>
+        <li> Reading books on Math and Circutry</li>
+        <li> Participating in local events. </li>
         <h3> Entertaining Myself: </h3>
         <li> Watching a lot on my Plex Server. </li>
         <li>
@@ -32,7 +32,7 @@ function NowPage() {
         </li>
         <li> Having fun with my dog, Mocha. </li>
       </ul>
-      <p> Last updated 2023-04-12 </p>
+      <p> Last updated 2023-11-24 </p>
       <p>
         Credits to <Link href="https://nownownow.com"> Derek Sivers </Link>
       </p>
