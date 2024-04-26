@@ -53,32 +53,35 @@ function About({ source }: any) {
       <p>Here are some places I have worked or volunteered at.</p>
       <ul className="experience-list">
         <li>
-          <Link href="https://mcdonalds.com" passHref>McDonalds</Link> - Food Service Worker - October 2022 to Present
+          <Link href="https://codeday.org/" passHref>CodeDay</Link> - Event Organizer - January 2020 to Present
         </li>
         <li>
-          <Link href="https://codeday.org/" passHref>CodeDay</Link> - Event Organizer - Jan 2020 to Nov 2023
+          <Link href="https://nwidolfest.com//" passHref>Northwest Idolfest</Link> - Programmer - June 2023 to November 2023
         </li>
         <li>
-          <Link href="https://thetahacks.tech" passHref>ThetaHacks</Link> - Lead Tech - Dec 2020 to Feb 2022
+          <Link href="https://mcdonalds.com" passHref>McDonalds</Link> - Food Service Worker - October 2022 to March 2023
+        </li>
+        <li>
+          <Link href="https://thetahacks.tech" passHref>ThetaHacks</Link> - Lead Tech - December 2020 to February 2022
         </li>
         <li>
           <Link href="https://kaidevrim.github.io/UPAHackClub.github.io/" passHref>
             UPA Hack Club
           </Link>
-          - Club Manager - Aug 2020 to Aug 2021
+          - Club Manager - August 2020 to August 2021
         </li>
         <li>
-          <Link href="https://vmware.com" passHref>VMWare</Link> - Intern - Jul 2019
+          <Link href="https://vmware.com" passHref>VMWare</Link> - Intern - July 2019
         </li>
         <li>
-          <Link href="https://ebay.com" passHref>eBay</Link> - Teacher - Jul 2019
+          <Link href="https://ebay.com" passHref>eBay</Link> - Teacher - July 2019
         </li>
       </ul>
       <h1 id="education"> Education </h1>
       <p>The schools and classes I have taken</p>
       <ul className="education-list">
         <li>
-          <Link href="https://seattleu.edu" passHref>Seattle University</Link> - 3.0 GPA - 2023 to 2027 <br />
+          <Link href="https://seattleu.edu" passHref>Seattle University</Link> - Computer Engineering - 2023 to 2027 <br />
         </li>
         <li>
           <Link href="https://upasv.org" passHref>University Preparatory Academy</Link> - 3.7 GPA - 2017 to 2023
