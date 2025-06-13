@@ -22,19 +22,18 @@ function About({ source }: any) {
       <Header />
       <h1 id="who">Who</h1>
       <p>
-        I am a Computer Engineering student at Seattle University who loves all things about
+        I am a Computer Science student at Bellevue College who loves all things about
         computers. When I am not on studying (rarely) I am
         <Link href="https://steamcommunity.com/id/kaidevrim" passHref> playing games,
         </Link>
-        <Link href="https://kitsu.io/users/devrim" passHref> or watching anime,</Link> or
+        <Link href="https://docs.google.com/document/d/1X4e-iTCzQk_DK5lG5VTcTznnSSbMrqPWDtEaIMu1iSI/edit?usp=sharing" passHref> or watching anime,</Link> or
         going to class. I used to be an
         active member in one of the largest programming communities,
         <Link href="https://hackclub.com" passHref> Hack Club</Link> and even wrote
         <Link href="https://workshops.hackclub.com/minecraft_modding" passHref> a workshop
         </Link>
         . Other than that, I love volunteering for various programming
-        communities and am currently helping out with
-        <Link href="https://ieee-seattle.org/" passHref> my local IEEE club</Link>. Personally,
+        communities and am currently helping out with my local technology scene. Personally,
         I love to work on my <Link href="https://dash.dvr.im" passHref>Homelab</Link> and
         learn new technologies. Currently I am programming whatever piques my interest
         while also making a
@@ -81,7 +80,10 @@ function About({ source }: any) {
       <p>The schools and classes I have taken</p>
       <ul className="education-list">
         <li>
-          <Link href="https://seattleu.edu" passHref>Seattle University</Link> - Computer Engineering - 2023 to 2027 <br />
+          <Link href="https://www.bellevuecollege.edu/" passHref>Bellevue College</Link> - Computer Science - 2025 to 2027 <br />
+        </li>
+        <li>
+          <Link href="https://seattleu.edu" passHref>Seattle University</Link> - Computer Engineering - 2023 to 2025 <br />
         </li>
         <li>
           <Link href="https://upasv.org" passHref>University Preparatory Academy</Link> - 3.7 GPA - 2017 to 2023
