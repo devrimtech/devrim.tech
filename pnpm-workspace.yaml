@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - '@swc/core'
+  - chromedriver
+  - puppeteer
+  - sharp
+  - unrs-resolver

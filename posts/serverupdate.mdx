@@ -1,0 +1,67 @@
+---
+title: My Homelab in 2025
+date: "2025-08-18"
+description: After more than 4 years of homelabbing, what is my current setup?
+visibility: public
+tags: ["technology", "server"]
+---
+
+# Building My Long-Term Server Setup
+
+## Motivation
+
+About three years ago, I decided to go all-in on building a server that would last me for several years—ideally through the rest of college. I didn't want to constantly swap hardware or rebuild every few months. Instead, my goal was a stable, future-proof setup that could handle storage, virtualization, and media needs without constant tinkering.
+
+I had a few requirements in mind when designing this server.
+
+## The Wants
+
+**1. Reliable Storage**
+I wanted at least 20 TB of storage in a RAID-1 array. RAID-1 mirrors data, allowing a drive to fail without losing anything while making replacement simple. This meant at least three 10 TB hard drives—ideally four, with one dedicated to redundancy.
+
+**2. Real-Time Media Transcoding**
+The server needed to handle real-time media transcoding. This meant either a dedicated GPU or a powerful Intel CPU with integrated graphics. Transcoding lets me adjust the bitrate of streamed media on the fly and also enables tools like [Tdarr](https://home.tdarr.io/), which can automatically re-encode media into efficient formats like H.265 or AV1, saving storage without noticeable quality loss.
+
+**3. Virtualization Compatibility**
+Since I wanted to run **TrueNAS, Proxmox, and Docker**, strong virtualization performance was a must. I already had experience with these tools, so the hardware needed to support them reliably.
+
+## The Upgrade
+
+At the time, I was working at McDonald's to fund this project. Luckily, I came across great hard drive deals from [Rhino Technology Group on eBay](https://www.ebay.com/str/rhinotechnologygroup). They consistently had 10 TB SAS drives for under $100—around **$9 per TB**, which was an incredible deal. Over the next few years, I collected six or seven of these drives. Impressively, they lasted about three years before I needed replacements in 2025 which was much better than I expected.
+
+Unfortunately, SAS drives aren't the same as SATA, so I needed a PCIe to SAS adapter card. This adapter card took up my only PCIe slot. Since my motherboard only had one PCIe slot, this meant I couldn't add a dedicated GPU. Fortunately, my old HTC Vive PC build came in clutch, it had an **Intel i5-11600K**, a fast CPU with an integrated GPU that supports AV1 transcoding. This covered both computing and media needs without requiring a discrete GPU.
+
+I also saved up enough for **32 GB of RAM**. In storage setups, a common recommendation I got was to have at least 1 GB of RAM for every TB of storage. While 24 GB would have worked, I went with 2 x 16 GB sticks to enable dual-channel mode, which is faster than using mismatched sticks.
+
+## Final Hardware Setup
+
+- **CPU**: Intel Core i5-11600K (11th Gen, 6 cores @ 3.9GHz)
+- **SSD**: PNY CS900 512 GB (boot drive)
+- **Motherboard**: ASRock H510M-HVS
+- **RAM**: 2 × 16 GB Crucial DDR4 (2667 MT/s)
+- **Storage**: 4 × 10 TB SAS hard drives (RAID-1 array)
+
+## Software Setup
+
+On the software side, I went with a familiar stack: **Proxmox, TrueNAS, and Docker**.
+
+- **Proxmox**: My Type-1 hypervisor, managing VMs and hardware resources. It's reliable, user-friendly, and great for virtualization.
+- **TrueNAS Scale**: Installed in a dedicated VM with direct SAS controller passthrough. It handles all storage management, with access from Proxmox and other services via NFS mounts.
+- **LXC + Docker**: I run Docker in an LXC container, which hosts all my internal/external services. Reverse proxy and SSL are handled by **Traefik**, even on LAN services with custom domains.
+
+Here's my current Docker lineup:
+
+- **Core/Networking**: Traefik (reverse proxy), Cloudflared (tunnel/forwarding)
+- **Media**: Radarr, Sonarr, Prowlarr, Overseerr, qBittorrent, Deluge, Tautulli
+- **Utilities**: Filestash, LibreSpeed, Flame (dashboard), Memos, Dillinger (Markdown editor), Shiori (bookmarks), Whoogle (search engine), Redlib (Reddit proxy), FlareSolverr
+- **Specialized**: Polr (URL shortener), Ubooquity (eBooks)
+
+To simplify management, I run all of these in a single **docker-compose.yml**. This makes redeployment easy if the server goes down, restoring everything is just one compose command away.
+
+For automation, I use **GitHub Actions, Ansible, and Terraform**:
+- Pushing a commit to my repo triggers GitHub Actions, which SSHs into the server, pulls updates, and redeploys containers automatically.
+- Terraform provisions new LXC containers in Proxmox, while Ansible configures them immediately afterward—so I almost never need to log in manually.
+
+## The Future
+
+As of now, the server runs flawlessly. No bottlenecks, just enough storage, and plays nicely together. This setup is essentially my dream homelab, but there's still one big stretch goal that I dream about, running it as a **cloud gaming server** (like private xCloud). That would require a much beefier GPU, more power, and higher cost—so for now, it stays a dream.
