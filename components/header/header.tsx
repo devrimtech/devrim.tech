@@ -7,7 +7,7 @@ const iconStyles = { padding: "0 5px", fontSize: "24px", cursor: "pointer" };
 export const Header = () => {
   return (
     <div className="header">
-      <Image alt="Kai" src="/Kai.jpg" width="150" height="150" />
+      <Image alt="Kai" src="/Kai.png" width="140" height="140" />
       <br />
       <IconContext.Provider value={{ size: "1.5em" }}>
         <div className="social-icons">

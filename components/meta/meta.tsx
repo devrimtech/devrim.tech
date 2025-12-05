@@ -13,7 +13,7 @@ export const Meta = (props: any) => {
           description
         }
       />
-      <link rel="icon" type="image/jpg" href="https://devrim.tech/Kai.jpg" />
+      <link rel="icon" type="image/png" href="/Kai.png" />
       <meta httpEquiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
       <title>{props.title || "Kai Devrim"}</title>
       <meta
