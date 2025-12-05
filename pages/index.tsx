@@ -22,8 +22,7 @@ function About({ source }: any) {
       <Header />
       <h1 id="who">Who</h1>
       <p>
-        I am a Computer Science student at Bellevue College who loves all things about
-        computers. When I am not on studying (rarely) I am
+        I am a Computer Science Student at Bellevue College who loves all things about computers. Spreading the knowledge about technology is a passion of mine. This means helping host AWS Cloud Clubs, teaching Robotics and Python at Xtatic, and helping host hackathons at Bellevue College! When I am not studying or programming or teaching (rarely) I am
         <Link href="https://steamcommunity.com/id/kaidevrim" passHref> playing games,
         </Link>
         <Link href="https://docs.google.com/document/d/1X4e-iTCzQk_DK5lG5VTcTznnSSbMrqPWDtEaIMu1iSI/edit?usp=sharing" passHref> or watching anime,</Link> or
@@ -52,7 +51,13 @@ function About({ source }: any) {
       <p>Here are some places I have worked or volunteered at.</p>
       <ul className="experience-list">
         <li>
-          <Link href="https://codeday.org/" passHref>CodeDay</Link> - Event Organizer - January 2020 to Present
+          <Link href="https://xtatic.org/" passHref>Xtatic</Link> - After-School Club Teacher - August 2025 to Present
+        </li>
+        <li>
+          <Link href="https://bellevuecollege.edu/" passHref>Bellevue College</Link> - CS Department Assistant - August 2025 to Present
+        </li>
+        <li>
+          <Link href="https://codeday.org/" passHref>CodeDay</Link> - Event Organizer - January 2020 to June 2025
         </li>
         <li>
           <Link href="https://nwidolfest.com//" passHref>Northwest Idolfest</Link> - Programmer - June 2023 to November 2023
@@ -80,7 +85,7 @@ function About({ source }: any) {
       <p>The schools and classes I have taken</p>
       <ul className="education-list">
         <li>
-          <Link href="https://www.bellevuecollege.edu/" passHref>Bellevue College</Link> - Computer Science - 2025 to 2027 <br />
+          <Link href="https://www.bellevuecollege.edu/" passHref>Bellevue College</Link> - 3.7 GPA - Computer Science - 2023 to 2027 <br />
         </li>
         <li>
           <Link href="https://seattleu.edu" passHref>Seattle University</Link> - Computer Engineering - 2023 to 2025 <br />
@@ -108,7 +113,7 @@ function About({ source }: any) {
           </Link> I made it using Next.js and TypeScript! (originally was Preact also) <br />
           <Link href="https://github.com/devrimtech/devrim.tech" passHref>
             <Image
-              src="https://camo.githubusercontent.com/67f9dc0190012065952c3836e207373e06678e7827a3bb06fa4b43258b3f3390/68747470733a2f2f64657672696d2e746563682f6d6574612e706e67"
+              src="/meta.png"
               unoptimized={true}
               alt="Website banner"
               width="300"
