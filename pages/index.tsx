@@ -214,8 +214,6 @@ function About({ source }: any) {
           </Link>
         </li>
       </ul>
-
-      <Webring />
     </div >
   );
 }
