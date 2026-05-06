@@ -22,7 +22,7 @@ function About({ source }: any) {
       <Header />
       <h1 id="who">Who</h1>
       <p>
-        I am a Computer Science Student at Bellevue College who loves all things about computers. Spreading the knowledge about technology is a passion of mine. This means helping host AWS Cloud Clubs, teaching Robotics and Python at Xtatic, and helping host hackathons at Bellevue College! When I am not studying or programming or teaching (rarely) I am
+        I am a Software Engineering Intern at BNSF Railway and a Computer Science Student at Bellevue College who loves all things about computers. Spreading the knowledge about technology is a passion of mine. This means helping host AWS Cloud Clubs, teaching Robotics and Python at Xtatic, and helping host hackathons at Bellevue College! When I am not studying or programming or teaching (rarely) I am
         <Link href="https://steamcommunity.com/id/kaidevrim" passHref> playing games,
         </Link>
         <Link href="https://docs.google.com/document/d/1X4e-iTCzQk_DK5lG5VTcTznnSSbMrqPWDtEaIMu1iSI/edit?usp=sharing" passHref> or watching anime,</Link> or
@@ -50,6 +50,15 @@ function About({ source }: any) {
       <h1 id="experience"> Experience </h1>
       <p>Here are some places I have worked or volunteered at.</p>
       <ul className="experience-list">
+        <li>
+          <Link href="https://www.bnsf.com/" passHref>BNSF Railway</Link> - Software Engineer Intern - June 2026 to August 2026
+        </li>
+        <li>
+          <Link href="https://www.breakthroughtech.org/" passHref>Breakthrough Tech</Link> - Fellow - May 2026 to May 2027
+        </li>
+        <li>
+          <Link href="https://codeday.org/" passHref>CodeDay Labs</Link> - Micro Internship - January 2026 to June 2026
+        </li>
         <li>
           <Link href="https://xtatic.org/" passHref>Xtatic</Link> - After-School Club Teacher - August 2025 to Present
         </li>
